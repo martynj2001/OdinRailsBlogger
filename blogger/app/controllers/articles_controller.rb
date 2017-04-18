@@ -8,6 +8,8 @@ class ArticlesController < ApplicationController
 
 	def show
 		@articles = Article.find(params[:id])
+		@comment = Comment.new #Reflection
+		@comment.article_id = @articles.id
 	end
 
 	def new
