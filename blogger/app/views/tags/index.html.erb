@@ -1,0 +1,9 @@
+<h1>Available Tags</h1>
+
+<p>Click to see the current tagged articles.</p>
+
+<ul>
+	<% @tag.each do |tags| %>
+		<li><%= link_to tags.name, tag_path(tags) %></li>
+		<%end%>
+</ul>
