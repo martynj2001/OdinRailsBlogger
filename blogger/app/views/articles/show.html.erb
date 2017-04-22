@@ -1,4 +1,6 @@
 <h1> Article: <%= @articles.title %> </h1>
+
+<p><%= image_tag @articles.image.url %></p>
 <p>Tags:
 <% @articles.tags.each do |tag| %>
 	<%= link_to tag.name, tag_path(tag) %>
