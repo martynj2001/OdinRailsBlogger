@@ -1,0 +1,64 @@
+$primary_color: #AAA;
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	background-color: $primary_color;
+	font:{
+		family: Verdana, Helvitica, Arial;
+		size: 14px;
+	}
+}
+
+a {
+	color: #0000FF
+	img {
+		border: none;
+	}
+}
+
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.form {
+	background: #AAB;
+	border: solid 1px black;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.btn {
+	border: solid 1px black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: #FFF;
+	text-decoration: none;
+	color: #000
+}
+.flash{
+	color: #92f442;
+}
+
+
+#container {
+	width: 75%;
+	margin: 0 auto;
+	background: #FFF;
+	padding: 20px 40px;
+	border: solid 1px black;
+	margin-top: 20px;
+}
+
+#content {
+	clear: both;
+	padding-top: 20px;
+}
+
+
+
