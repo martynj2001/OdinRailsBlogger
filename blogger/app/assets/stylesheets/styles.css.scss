@@ -1,23 +1,34 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 $primary_color: #AAA;
+$text_color: #5e4477;
+
+
 
 h1 {
 	font-family: 'Raleway', sans-serif;
+	color: $text_color;
+	margin: 20px auto;
+	padding: 40px 20px;
 }
 
 body {
 	background-color: $primary_color;
 	font:{
-		family: Verdana, Helvitica, Arial;
+		family: 'Raleway', sans-serif;
 		size: 14px;
 	}
+	padding: 10px 10px;
 }
 
 a {
-	color: #0000FF
+	color: $text_color;
 	img {
 		border: none;
 	}
 }
+
 
 
 .clear {
@@ -39,14 +50,32 @@ a {
 	border-radius: 5px;
 	background: #FFF;
 	text-decoration: none;
-	color: #000
+	color: $text_color;
 }
 .flash{
 	color: #92f442;
 }
 
+.center{
+	text-align: center;
+}
+.text_area{
+	width: 75%;
+	margin: 0 auto;
+	border: solid 1px black;
+}
+.text_field{
+	width: 75%;
+	margin: 0 auto;
+	border: solid 1px black;
+}
+.tag_field{
+	width: 70%;
+	margin: 0 auto;
+	border: solid 1px black;
+}
 
-#container {
+.container {
 	width: 75%;
 	margin: 0 auto;
 	background: #FFF;
@@ -59,6 +88,23 @@ a {
 	clear: both;
 	padding-top: 20px;
 }
+#container{
+	margin: 0 auto;
+	padding: 10px;
+	font-family: 'Raleway', sans-serif;
+	color: $text_color;
+	font-size: 16px;
 
+}
 
+#articles{
+	margin: 0 auto;
+	width: 60%;
+}
+#title{
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	color: $text_color;
+	font-size: 16px;
+}
 

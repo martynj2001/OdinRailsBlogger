@@ -1,9 +1,10 @@
-<h1>Available Tags</h1>
+<h1 class='center'>Available Tags</h1>
+<div class='container'>
+	<p>Click to see the current tagged articles.</p>
 
-<p>Click to see the current tagged articles.</p>
-
-<ul>
-	<% @tag.each do |tags| %>
-		<li><%= link_to tags.name, tag_path(tags) %></li>
-		<%end%>
-</ul>
+	<ul>
+		<% @tag.each do |tags| %>
+			<li><%= link_to tags.name, tag_path(tags) %></li>
+			<%end%>
+	</ul>
+</div>

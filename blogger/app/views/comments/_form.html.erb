@@ -3,12 +3,12 @@
 <%= form_for [ @articles, @comment ] do |f| %>
 	<p>
 		<%= f.label  :author_name, "Your Name" %>  <br>
-		<%= f.text_field :author_name %>
+		<%= f.text_field :author_name, class: 'text_field' %>
 	</p>
 
 	<p>
 		<%= f.label :body, "Your Comment" %> <br>
-		<%= f.text_area :body %>
+		<%= f.text_area :body, class: 'text_area'%>
 	</p>
 
 	<p>

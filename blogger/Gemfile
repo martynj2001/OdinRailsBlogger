@@ -54,3 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Paperclip Gem - added to continue I4 of tutoril - add attahcments to blogger
 gem 'paperclip'
+#Sorcery GEm - added to continue I5 of tutorila - add authentication to blogger
+gem 'sorcery'
+#Bootstrap
+gem 'bootstrap-sass'

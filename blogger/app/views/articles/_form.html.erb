@@ -5,18 +5,17 @@
 	<li><%= error %></li>
 	<%end%>
 </ul>
-<div class="form">
 	<p>
-		<div class="label"><%= f.label :title %> <br> </div>
-		<%= f.text_field :title %>
+		<%= f.label :title %> <br>
+		<%= f.text_field :title, class: 'text_field' %>
 	</p>
 	<p>
-		<div class="label"><%= f.label :body %> <br> </div>
-		<%= f.text_area :body %>
+		<%= f.label :body %> <br>
+		<%= f.text_area :body, class: 'text_area' %>
 	</p>
 	<p>
 		<%= f.label :tag_list, "Tags"%>
-		<%= f.text_field :tag_list %>
+		<%= f.text_field :tag_list, class: 'tag_field'%>
 	</p>
 	<p>
 		
@@ -29,5 +28,4 @@
 	<p>
 		<%= f.submit %>
 	</p>
-</div>
 <%end%>
