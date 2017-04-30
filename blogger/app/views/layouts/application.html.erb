@@ -9,19 +9,31 @@
   </head>
 
   <body>
+    
     <header class="navbar navbar-fixed-top navbar inverse">
       <div id='container'>
-          <h3 id='title'>'blogger' App</h3>
-          <nav>
-            <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to "Articles List", articles_path %></li>
-              <li><%= link_to "New Article", new_article_path %></li>
-              <li><%= link_to "Tag List", tags_path %></li>
-            </ul>
-          </nav>
-        </div>
+          <h3 class='title'>'blogger' App</h3>
+          <h3 id='user'>
+            <% if logged_in? %>
+            <%="User: #{current_user.username}" %>
+            <%= link_to "Logout", logout_path, class: 'loginout' %>
+            <%else%>
+            Logged Out
+            <%= link_to "Login", login_path, class: 'loginout' %>
+            <%end%>
+          </h3>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Articles List", articles_path %></li>
+            <li><%= link_to "New Article", new_article_path %></li>
+            <li><%= link_to "Tag List", tags_path %></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-  	<p class ="flash"><%= flash.notice %></p>
-      <%= yield %>
+    <%= yield %>
+    <footer class="footer">
+      <p class ="flash"><%= flash.notice %></p>
+    </footer>
   </body>
 </html>

@@ -54,6 +54,8 @@ a {
 }
 .flash{
 	color: #92f442;
+	padding: 10px;
+	margin: 0 auto;
 }
 
 .center{
@@ -101,10 +103,28 @@ a {
 	margin: 0 auto;
 	width: 60%;
 }
-#title{
-	float: left;
+.title {
 	font-family: 'Raleway', sans-serif;
 	color: $text_color;
 	font-size: 16px;
+	float: left;
+	width: 20%;
+	padding: 0 5px;
 }
+#user{
+	ont-family: 'Raleway', sans-serif;
+	color: $text_color;
+	font-size: 16px;
+	float: left;
+	width: 30%;
+}
+.loginout{
+	border: solid 1px black;
+	padding: 2.5px;
+	background: #AAB;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
 
