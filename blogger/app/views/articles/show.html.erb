@@ -17,7 +17,9 @@
 	<%= render partial: 'comments/form' %>
 
 	<div>
-		<%= link_to "Edit Article", edit_article_path(@articles), class: "btn" %>
-		<%= link_to "Delete" , article_path(@articles), method: :delete, data: {confirm: "Really delete this article?"}, class: "btn"%>
+		<%if logged_in? %>
+			<%= link_to "Edit Article", edit_article_path(@articles), class: "btn" %>
+			<%= link_to "Delete" , article_path(@articles), method: :delete, data: {confirm: "Really delete this article?"}, class: "btn"%>
+		<% end %>
 	</div>
 </div>

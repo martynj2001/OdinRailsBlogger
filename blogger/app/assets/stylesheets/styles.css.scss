@@ -45,12 +45,8 @@ a {
 }
 
 .btn {
-	border: solid 1px black;
-	padding: 5px 10px;
-	border-radius: 5px;
-	background: #FFF;
-	text-decoration: none;
 	color: $text_color;
+	text-decoration: none;
 }
 .flash{
 	color: #92f442;
@@ -109,22 +105,26 @@ a {
 	font-size: 16px;
 	float: left;
 	width: 20%;
-	padding: 0 5px;
+	padding: 10px 10px;
+	margin: 5px auto;
+	
 }
 #user{
-	ont-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: $text_color;
 	font-size: 16px;
-	float: left;
-	width: 30%;
+	width: 20%;
 }
-.loginout{
-	border: solid 1px black;
-	padding: 2.5px;
-	background: #AAB;
-	border-radius: 5px;
-	text-decoration: none;
-	margin-left: 10px;
+#createuser{
+	margin: 20px auto;
 }
+.center_user{
+	margin: 0 auto;
+}
+#user_control{
+	width: 100%;
+	padding: 20px 20px;
+}
+
 
 

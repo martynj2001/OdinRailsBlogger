@@ -12,16 +12,7 @@
     
     <header class="navbar navbar-fixed-top navbar inverse">
       <div id='container'>
-          <h3 class='title'>'blogger' App</h3>
-          <h3 id='user'>
-            <% if logged_in? %>
-            <%="User: #{current_user.username}" %>
-            <%= link_to "Logout", logout_path, class: 'loginout' %>
-            <%else%>
-            Logged Out
-            <%= link_to "Login", login_path, class: 'loginout' %>
-            <%end%>
-          </h3>
+        <h3 class='title'>'blogger' App</h3>
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Articles List", articles_path %></li>
@@ -29,9 +20,27 @@
             <li><%= link_to "Tag List", tags_path %></li>
           </ul>
         </nav>
-      </div>
+      </div> 
+
     </header>
+
     <%= yield %>
+
+    <div id="user_control">
+        <% if logged_in? %>
+          <h3 id='user' class="center_user"><%="User: #{current_user.username}" %></h3>
+          <div id ='user' class="center_user">
+            <%= link_to "Logout", logout_path, class: "btn btn-default btn-xs" %>
+            <%= link_to "Create User", new_author_path, class: "btn btn-default btn-xs", id: "create_user" %>
+          </div>
+          <%else%>
+          <h3 id='user' class="center_user">Logged Out</h3>
+          <div id ='user' class="center_user">
+            <%= link_to "Login", login_path, class: "btn btn-default btn-xs" %>
+          </div>
+        <%end%>
+    </div>
+
     <footer class="footer">
       <p class ="flash"><%= flash.notice %></p>
     </footer>
